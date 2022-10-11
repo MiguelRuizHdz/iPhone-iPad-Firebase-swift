@@ -13,6 +13,7 @@
 		147850BB28F5DA7D00439EBC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 147850BA28F5DA7D00439EBC /* FirebaseFirestore */; };
 		147850BD28F5DA7D00439EBC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 147850BC28F5DA7D00439EBC /* FirebaseStorage */; };
 		147850BF28F5DAB400439EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147850BE28F5DAB400439EBC /* AppDelegate.swift */; };
+		147850C228F5DD9600439EBC /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147850C128F5DD9600439EBC /* FirebaseViewModel.swift */; };
 		14ECC2CA28F5D29100F80722 /* IphoneIpadFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECC2C928F5D29100F80722 /* IphoneIpadFirebaseApp.swift */; };
 		14ECC2CC28F5D29100F80722 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECC2CB28F5D29100F80722 /* ContentView.swift */; };
 		14ECC2CE28F5D29400F80722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ECC2CD28F5D29400F80722 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		147850B328F5D90700439EBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		147850BE28F5DAB400439EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		147850C128F5DD9600439EBC /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 		14ECC2C628F5D29100F80722 /* IphoneIpadFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IphoneIpadFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14ECC2C928F5D29100F80722 /* IphoneIpadFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneIpadFirebaseApp.swift; sourceTree = "<group>"; };
 		14ECC2CB28F5D29100F80722 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147850C028F5DD7E00439EBC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				147850C128F5DD9600439EBC /* FirebaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		14ECC2BD28F5D29100F80722 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 		14ECC2C828F5D29100F80722 /* IphoneIpadFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				147850C028F5DD7E00439EBC /* ViewModel */,
 				14ECC2C928F5D29100F80722 /* IphoneIpadFirebaseApp.swift */,
 				14ECC2CB28F5D29100F80722 /* ContentView.swift */,
 				147850B328F5D90700439EBC /* GoogleService-Info.plist */,
@@ -164,6 +175,7 @@
 				147850BF28F5DAB400439EBC /* AppDelegate.swift in Sources */,
 				14ECC2CC28F5D29100F80722 /* ContentView.swift in Sources */,
 				14ECC2CA28F5D29100F80722 /* IphoneIpadFirebaseApp.swift in Sources */,
+				147850C228F5DD9600439EBC /* FirebaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
