@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var loginShow : FirebaseViewModel
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        return Group {
+            if loginShow.show {
+                Login()
+                    .edgesIgnoringSafeArea(.all)
+                    .preferredColorScheme(.dark)
+            } else {
+                Login()
+            }
+        }
     }
 }
 
@@ -19,3 +28,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
