@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct Home: View {
+    @State private var index = "Playstation"
+    @State private var menu = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            VStack{
+                NavBar(index: $index, menu: $menu)
+            }
+        }
     }
 }
 
