@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         return Group {
             if loginShow.show {
-                Login()
+                Home()
                     .edgesIgnoringSafeArea(.all)
                     .preferredColorScheme(.dark)
             } else {
