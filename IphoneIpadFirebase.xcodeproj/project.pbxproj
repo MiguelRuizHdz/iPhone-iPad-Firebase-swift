@@ -18,6 +18,7 @@
 		147850BF28F5DAB400439EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147850BE28F5DAB400439EBC /* AppDelegate.swift */; };
 		147850C228F5DD9600439EBC /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147850C128F5DD9600439EBC /* FirebaseViewModel.swift */; };
 		147850C528F5DFF000439EBC /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147850C428F5DFF000439EBC /* Login.swift */; };
+		14B71EA3291182BD00CE1371 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B71EA2291182BD00CE1371 /* CardView.swift */; };
 		14ECC2CA28F5D29100F80722 /* IphoneIpadFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECC2C928F5D29100F80722 /* IphoneIpadFirebaseApp.swift */; };
 		14ECC2CC28F5D29100F80722 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECC2CB28F5D29100F80722 /* ContentView.swift */; };
 		14ECC2CE28F5D29400F80722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ECC2CD28F5D29400F80722 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		147850BE28F5DAB400439EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		147850C128F5DD9600439EBC /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 		147850C428F5DFF000439EBC /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		14B71EA2291182BD00CE1371 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		14ECC2C628F5D29100F80722 /* IphoneIpadFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IphoneIpadFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14ECC2C928F5D29100F80722 /* IphoneIpadFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneIpadFirebaseApp.swift; sourceTree = "<group>"; };
 		14ECC2CB28F5D29100F80722 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				143864F228FEF6E300A91620 /* ButtonView.swift */,
 				143864F428FEF81E00A91620 /* NavBar.swift */,
+				14B71EA2291182BD00CE1371 /* CardView.swift */,
 			);
 			path = Elementos;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				147850BF28F5DAB400439EBC /* AppDelegate.swift in Sources */,
+				14B71EA3291182BD00CE1371 /* CardView.swift in Sources */,
 				143864F528FEF81E00A91620 /* NavBar.swift in Sources */,
 				147850C528F5DFF000439EBC /* Login.swift in Sources */,
 				14ECC2CC28F5D29100F80722 /* ContentView.swift in Sources */,
