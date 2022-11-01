@@ -14,6 +14,8 @@ struct AddView: View {
     var consolas = ["playstation", "nintendo", "xbox"]
     @State private var plataforma = "playstation"
     
+    @StateObject var guardar = FirebaseViewModel()
+    
     var body: some View {
         ZStack{
             Color.yellow.edgesIgnoringSafeArea(.all)
@@ -30,6 +32,12 @@ struct AddView: View {
                 }
                 Button(action:{
                     //
+                    guardar.save(titulo: titulo, desc: desc, plataforma: plataforma, portada: "ruta") { (done) in
+                        if done {
+                            titulo = ""
+                            desc = ""
+                        }
+                    }
                 }){
                     Text("Guardar")
                         .foregroundColor(.black)
