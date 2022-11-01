@@ -15,10 +15,8 @@ struct ContentView: View {
             if loginShow.show {
                 Home()
                     .edgesIgnoringSafeArea(.all)
-                    .preferredColorScheme(.dark)
             } else {
                 Login()
-                    .preferredColorScheme(.light)
             }
         }.onAppear{
             if (UserDefaults.standard.object(forKey: "sesion")) != nil {

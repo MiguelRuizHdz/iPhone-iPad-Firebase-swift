@@ -8,13 +8,36 @@
 import SwiftUI
 
 struct AddView: View {
+    
+    @State private var titulo = ""
+    @State private var desc = ""
+    var consolas = ["playstation", "nintendo", "xbox"]
+    @State private var plataforma = "playstation"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct AddView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddView()
+        ZStack{
+            Color.yellow.edgesIgnoringSafeArea(.all)
+            VStack{
+                TextField("Titulo", text: $titulo)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextEditor(text: $desc)
+                    .frame(height: 200)
+                Picker( "Consolas", selection: $plataforma){
+                    ForEach(consolas, id: \.self ) { item in
+                        Text(item)
+                            .foregroundColor(.black)
+                    }
+                }
+                Button(action:{
+                    //
+                }){
+                    Text("Guardar")
+                        .foregroundColor(.black)
+                        .bold()
+                        .font(.largeTitle)
+                }
+                Spacer()
+            }.padding(.all)
+        }
     }
 }
