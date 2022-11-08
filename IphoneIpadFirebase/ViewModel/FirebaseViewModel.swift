@@ -56,7 +56,7 @@ class FirebaseViewModel: ObservableObject {
         let campos : [String: Any] = ["titulo": titulo, "desc": desc, "portada": portada, "idUser": idUser, "email": email]
         db.collection(plataforma).document(id).setData(campos){error in
             if let error = error?.localizedDescription {
-                print("Error al guardar en firestore")
+                print("Error al guardar en firestore", error)
             } else {
                 print("guardo todo")
                 completion(true)
