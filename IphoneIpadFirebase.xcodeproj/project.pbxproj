@@ -25,6 +25,7 @@
 		14ECC2CE28F5D29400F80722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ECC2CD28F5D29400F80722 /* Assets.xcassets */; };
 		14ECC2D128F5D29400F80722 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ECC2D028F5D29400F80722 /* Preview Assets.xcassets */; };
 		7521B38D291E09160057DFB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7521B38C291E09160057DFB4 /* GoogleService-Info.plist */; };
+		7521B390291E14C00057DFB4 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521B38F291E14C00057DFB4 /* FirebaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		14ECC2CD28F5D29400F80722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14ECC2D028F5D29400F80722 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7521B38C291E09160057DFB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7521B38F291E14C00057DFB4 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		14ECC2C828F5D29100F80722 /* IphoneIpadFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				7521B38E291E149F0057DFB4 /* Model */,
 				147850C328F5DFC800439EBC /* View */,
 				7521B38C291E09160057DFB4 /* GoogleService-Info.plist */,
 				147850C028F5DD7E00439EBC /* ViewModel */,
@@ -127,6 +130,14 @@
 				14ECC2D028F5D29400F80722 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7521B38E291E149F0057DFB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7521B38F291E14C00057DFB4 /* FirebaseModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7521B390291E14C00057DFB4 /* FirebaseModel.swift in Sources */,
 				147850BF28F5DAB400439EBC /* AppDelegate.swift in Sources */,
 				14B71EA3291182BD00CE1371 /* CardView.swift in Sources */,
 				14B71EA729119DE500CE1371 /* AddView.swift in Sources */,
