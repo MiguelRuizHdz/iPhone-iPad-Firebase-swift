@@ -27,6 +27,7 @@
 		7521B38D291E09160057DFB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7521B38C291E09160057DFB4 /* GoogleService-Info.plist */; };
 		7521B390291E14C00057DFB4 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521B38F291E14C00057DFB4 /* FirebaseModel.swift */; };
 		7521B393291E18D80057DFB4 /* PortadaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521B392291E18D80057DFB4 /* PortadaViewModel.swift */; };
+		754CF9BE291EFFDB00D2B20C /* ImagenFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF9BD291EFFDB00D2B20C /* ImagenFirebase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		7521B38C291E09160057DFB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7521B38F291E14C00057DFB4 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		7521B392291E18D80057DFB4 /* PortadaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortadaViewModel.swift; sourceTree = "<group>"; };
+		754CF9BD291EFFDB00D2B20C /* ImagenFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenFirebase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				143864F428FEF81E00A91620 /* NavBar.swift */,
 				14B71EA2291182BD00CE1371 /* CardView.swift */,
 				14731A61291ABE75006079FA /* ImagePicker.swift */,
+				754CF9BD291EFFDB00D2B20C /* ImagenFirebase.swift */,
 			);
 			path = Elementos;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				147850C528F5DFF000439EBC /* Login.swift in Sources */,
 				14ECC2CC28F5D29100F80722 /* ContentView.swift in Sources */,
 				14ECC2CA28F5D29100F80722 /* IphoneIpadFirebaseApp.swift in Sources */,
+				754CF9BE291EFFDB00D2B20C /* ImagenFirebase.swift in Sources */,
 				14731A62291ABE75006079FA /* ImagePicker.swift in Sources */,
 				143864F028FEF30200A91620 /* Home.swift in Sources */,
 				147850C228F5DD9600439EBC /* FirebaseViewModel.swift in Sources */,
