@@ -26,6 +26,7 @@
 		14ECC2D128F5D29400F80722 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ECC2D028F5D29400F80722 /* Preview Assets.xcassets */; };
 		7521B38D291E09160057DFB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7521B38C291E09160057DFB4 /* GoogleService-Info.plist */; };
 		7521B390291E14C00057DFB4 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521B38F291E14C00057DFB4 /* FirebaseModel.swift */; };
+		7521B393291E18D80057DFB4 /* PortadaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521B392291E18D80057DFB4 /* PortadaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		14ECC2D028F5D29400F80722 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7521B38C291E09160057DFB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7521B38F291E14C00057DFB4 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		7521B392291E18D80057DFB4 /* PortadaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortadaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				7521B38F291E14C00057DFB4 /* FirebaseModel.swift */,
+				7521B392291E18D80057DFB4 /* PortadaViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				14B71EA3291182BD00CE1371 /* CardView.swift in Sources */,
 				14B71EA729119DE500CE1371 /* AddView.swift in Sources */,
 				143864F528FEF81E00A91620 /* NavBar.swift in Sources */,
+				7521B393291E18D80057DFB4 /* PortadaViewModel.swift in Sources */,
 				147850C528F5DFF000439EBC /* Login.swift in Sources */,
 				14ECC2CC28F5D29100F80722 /* ContentView.swift in Sources */,
 				14ECC2CA28F5D29100F80722 /* IphoneIpadFirebaseApp.swift in Sources */,

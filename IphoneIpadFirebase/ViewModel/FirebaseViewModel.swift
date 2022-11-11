@@ -71,7 +71,7 @@ class FirebaseViewModel: ObservableObject {
                     if let error = error?.localizedDescription {
                         print("Error al guardar en firestore", error)
                     } else {
-                        print("guardo todo")
+                        print("Guardo todo")
                         completion(true)
                     }
                 }
