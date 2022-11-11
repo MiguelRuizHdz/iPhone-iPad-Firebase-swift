@@ -71,23 +71,26 @@ struct AddView: View {
                             .resizable()
                             .frame(width: 250, height: 250)
                             .cornerRadius(15)
-                    }
-                    
-                    
-                    Button(action:{
-                        //
-                        guardar.save(titulo: titulo, desc: desc, plataforma: plataforma, portada: "ruta") { (done) in
-                            if done {
-                                titulo = ""
-                                desc = ""
+                        
+                        Button(action:{
+                            //
+                            guardar.save(titulo: titulo, desc: desc, plataforma: plataforma, portada: imageData) { (done) in
+                                if done {
+                                    titulo = ""
+                                    desc = ""
+                                    imageData = .init(capacity: 0)
+                                }
                             }
+                        }){
+                            Text("Guardar")
+                                .foregroundColor(.black)
+                                .bold()
+                                .font(.largeTitle)
                         }
-                    }){
-                        Text("Guardar")
-                            .foregroundColor(.black)
-                            .bold()
-                            .font(.largeTitle)
                     }
+                    
+                    
+                    
                     Spacer()
                 }.padding(.all)
             }

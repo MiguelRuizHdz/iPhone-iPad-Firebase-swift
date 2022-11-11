@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseCore
 import FirebaseAuth
+import FirebaseStorage
 import FirebaseFirestore
 
 class FirebaseViewModel: ObservableObject {
@@ -48,20 +49,42 @@ class FirebaseViewModel: ObservableObject {
     /// BASE DE DATOS
     
     // GUARDAR
-    func save(titulo: String, desc: String, plataforma: String, portada: String, completion: @escaping (_ done: Bool) -> Void) {
-        let db = Firestore.firestore()
-        let id = UUID().uuidString
-        guard let idUser = Auth.auth().currentUser?.uid else { return  }
-        guard let email = Auth.auth().currentUser?.email else { return  }
-        let campos : [String: Any] = ["titulo": titulo, "desc": desc, "portada": portada, "idUser": idUser, "email": email]
-        db.collection(plataforma).document(id).setData(campos){error in
-            if let error = error?.localizedDescription {
-                print("Error al guardar en firestore", error)
+    func save(titulo: String, desc: String, plataforma: String, portada: Data, completion: @escaping (_ done: Bool) -> Void) {
+        
+        let storage = Storage.storage().reference()
+        let nombrePortada = UUID()
+        let directorio = storage.child("imagenes/\(nombrePortada)")
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/png"
+        
+        directorio.putData(portada, metadata: metadata){data, error in
+            if error == nil {
+                print("Guardó la imagen")
+                // GUARDAR TEXTO
+                let db = Firestore.firestore()
+                let id = UUID().uuidString
+                guard let idUser = Auth.auth().currentUser?.uid else { return  }
+                guard let email = Auth.auth().currentUser?.email else { return  }
+                let campos : [String: Any] = ["titulo": titulo, "desc": desc, "portada": String(describing: directorio), "idUser": idUser, "email": email]
+                db.collection(plataforma).document(id).setData(campos){error in
+                    if let error = error?.localizedDescription {
+                        print("Error al guardar en firestore", error)
+                    } else {
+                        print("guardo todo")
+                        completion(true)
+                    }
+                }
+                
+                // TERMINO DE GUARDAR TEXTO
             } else {
-                print("guardo todo")
-                completion(true)
+                if let error = error?.localizedDescription {
+                    print("Falló al subir imagen en storage", error)
+                } else {
+                    print("Falló la app")
+                }
             }
         }
+        
         
     }
     
