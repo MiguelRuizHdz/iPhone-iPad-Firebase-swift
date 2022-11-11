@@ -28,6 +28,7 @@
 		7521B390291E14C00057DFB4 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521B38F291E14C00057DFB4 /* FirebaseModel.swift */; };
 		7521B393291E18D80057DFB4 /* PortadaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521B392291E18D80057DFB4 /* PortadaViewModel.swift */; };
 		754CF9BE291EFFDB00D2B20C /* ImagenFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF9BD291EFFDB00D2B20C /* ImagenFirebase.swift */; };
+		754CF9C0291F058200D2B20C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF9BF291F058200D2B20C /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		7521B38F291E14C00057DFB4 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		7521B392291E18D80057DFB4 /* PortadaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortadaViewModel.swift; sourceTree = "<group>"; };
 		754CF9BD291EFFDB00D2B20C /* ImagenFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenFirebase.swift; sourceTree = "<group>"; };
+		754CF9BF291F058200D2B20C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				14B71EA2291182BD00CE1371 /* CardView.swift */,
 				14731A61291ABE75006079FA /* ImagePicker.swift */,
 				754CF9BD291EFFDB00D2B20C /* ImagenFirebase.swift */,
+				754CF9BF291F058200D2B20C /* ListView.swift */,
 			);
 			path = Elementos;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			files = (
 				7521B390291E14C00057DFB4 /* FirebaseModel.swift in Sources */,
 				147850BF28F5DAB400439EBC /* AppDelegate.swift in Sources */,
+				754CF9C0291F058200D2B20C /* ListView.swift in Sources */,
 				14B71EA3291182BD00CE1371 /* CardView.swift in Sources */,
 				14B71EA729119DE500CE1371 /* AddView.swift in Sources */,
 				143864F528FEF81E00A91620 /* NavBar.swift in Sources */,
