@@ -12,8 +12,16 @@ import FirebaseStorage
 import FirebaseFirestore
 
 class FirebaseViewModel: ObservableObject {
+    
     @Published var show = false
     @Published var datos = [FirebaseModel]()
+    @Published var itemUpdate : FirebaseModel!
+    @Published var showEditar = false
+    
+    func sendData(item: FirebaseModel) {
+        itemUpdate = item
+        showEditar.toggle()
+    }
     
     func login(email: String, pass: String, completion: @escaping (_ done: Bool) -> Void){
         Auth.auth().signIn(withEmail: email, password: pass) {

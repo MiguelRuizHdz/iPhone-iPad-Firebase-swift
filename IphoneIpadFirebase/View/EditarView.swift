@@ -110,5 +110,8 @@ struct EditarView: View {
                 }.padding(.all)
             }
         }.navigationViewStyle(StackNavigationViewStyle())
+            .onAppear{
+                print(datos)
+            }
     }
 }
