@@ -140,6 +140,46 @@ class FirebaseViewModel: ObservableObject {
         }
     }
     
+    // EDITAR CON IMAGEN
+    func editWithImage(titulo:String, desc:String, plataforma:String, id:String, index:FirebaseModel, portada: Data, completion: @escaping (_ done: Bool) -> Void){
+        // Eliminar imagen
+        let imagen = index.portada
+        let borrarImagen = Storage.storage().reference(forURL: imagen)
+        borrarImagen.delete(completion: nil)
+        
+        // Subir la nueva imagen
+        let storage = Storage.storage().reference()
+        let nombrePortada = UUID()
+        let directorio = storage.child("imagenes/\(nombrePortada)")
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/png"
+        
+        directorio.putData(portada, metadata: metadata){data, error in
+            if error == nil {
+                print("Guardó la imagen nueva")
+                // EDITANDO TEXTO
+                let db = Firestore.firestore()
+                let campos : [String: Any] = ["titulo":titulo, "desc":desc, "portada":String(describing: directorio)]
+                db.collection(plataforma ).document(id).updateData(campos){error in
+                    if let error = error?.localizedDescription {
+                        print("Error al editar", error)
+                    } else {
+                        print("Se editó solo texto")
+                        completion(true)
+                    }
+                }
+                
+                // TERMINO DE EDITAR TEXTO
+            } else {
+                if let error = error?.localizedDescription {
+                    print("Falló al subir imagen en storage", error)
+                } else {
+                    print("Falló la app")
+                }
+            }
+        }
+        
+    }
     
     
     
