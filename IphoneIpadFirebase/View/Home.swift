@@ -59,7 +59,7 @@ struct Home: View {
                 }
             }
         }
-        .background(Color.white.opacity(0.9))
+        .background(Color("fondo"))
     }
 }
 
