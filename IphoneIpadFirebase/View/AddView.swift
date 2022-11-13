@@ -96,8 +96,7 @@ struct AddView: View {
                             ProgressView()
                         }
                     }
-                    
-                    
+                             
                     
                     Spacer()
                 }.padding(.all)

@@ -39,9 +39,14 @@ struct EditarView: View {
                     
                     TextField("Titulo", text: $titulo)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .onAppear{
+                            titulo = datos.titulo
+                        }
                     TextEditor(text: $desc)
                         .frame(height: 200)
-                    
+                        .onAppear{
+                            desc = datos.desc
+                        }
                     
                     Button(action: {
                         mostrarMenu.toggle()
