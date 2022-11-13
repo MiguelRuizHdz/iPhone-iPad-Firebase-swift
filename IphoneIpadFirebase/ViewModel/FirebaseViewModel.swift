@@ -127,7 +127,7 @@ class FirebaseViewModel: ObservableObject {
     
     
     // EDITAR
-    func edit(titulo:String, desc:String, plataforma:String, id:String, completion: @escaping (_ done: Bool) -> Void){
+    func edit(titulo:String, desc:String, plataforma:String, id:String, completion: @escaping (_ done: Bool) -> Void) {
         let db = Firestore.firestore()
         let campos : [String: Any] = ["titulo":titulo, "desc":desc]
         db.collection(plataforma ).document(id).updateData(campos){error in
