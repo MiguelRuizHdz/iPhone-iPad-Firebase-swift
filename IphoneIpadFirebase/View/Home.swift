@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct Home: View {
     @State private var index = "Playstation"
     @State private var menu = false
     @State private var widthMenu = UIScreen.main.bounds.width
-    
+    @EnvironmentObject var loginShow : FirebaseViewModel
     
     var body: some View {
         ZStack{
@@ -51,6 +52,16 @@ struct Home: View {
                             ButtonView(index: $index, menu: $menu, title: "Playstation")
                             ButtonView(index: $index, menu: $menu, title: "Xbox")
                             ButtonView(index: $index, menu: $menu, title: "Nintendo")
+                            Button(action:{
+                                try! Auth.auth().signOut()
+                                UserDefaults.standard.removeObject(forKey: "sesion")
+                                loginShow.show = false
+                            }){
+                                Text("Salir")
+                                    .foregroundColor(.white)
+                                    .bold()
+                                    .font(.title)
+                            }
                         }
                         Spacer()
                     }
